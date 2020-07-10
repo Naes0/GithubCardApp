@@ -25,9 +25,10 @@ const testData = [
 ];
 
 const CardList = (props) => {
+  const { data } = props;
   return (
     <div>
-      {testData.map((profile) => (
+      {data.map((profile) => (
         <Card key={profile.id} {...profile} />
       ))}
     </div>
